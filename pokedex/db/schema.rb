@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2020_10_13_184711) do
   end
 
   create_table "poke_moves", force: :cascade do |t|
-    t.integer "move_id"
+    t.integer "move_id"   
     t.integer "pokemon_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

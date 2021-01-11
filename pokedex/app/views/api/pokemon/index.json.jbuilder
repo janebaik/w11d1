@@ -1,6 +1,6 @@
 @pokemon.each do |poke| #to iterate thru pokemon
     json.set! poke.id do #to explicity set the key to the pokemon id
-        json.extract! poke, :id, :name
+        json.extract! poke, :id, :name  
         json.image_url asset_path("pokemon_snaps/#{poke.image_url}")
     end
 end
